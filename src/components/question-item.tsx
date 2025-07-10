@@ -1,6 +1,5 @@
 import { Bot, Loader2, MessageSquare } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
-import { dayjs } from '@/utils/dayjs'
 
 interface Question {
   id: string
@@ -62,7 +61,7 @@ export function QuestionItem({ question }: QuestionItemProps) {
 
           <div className="flex justify-end">
             <span className="text-muted-foreground text-xs">
-              {dayjs(question.createdAt).toNow()}
+              {question.createdAt}
             </span>
           </div>
         </div>

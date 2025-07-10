@@ -22,6 +22,7 @@ export function QuestionList({ roomId }: QuestionListProps) {
                         question={{
                             id: '1',
                             question: question.question,
+                            answer: question.answer,
                             createdAt: dayjs(question.createdAt).toNow(),
                         }}
                     />
